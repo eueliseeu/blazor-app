@@ -3,10 +3,9 @@
 <h1>Exemplo da Página</h1>
 
 <p>Valor atual: @valor</p>
-
+<button class="btn btn-primary" @onclick="IncrementarValor">Incrementar Valor</button>
 @code {
-    private int valor = 10;
-
+    private int valor = 0;
     private void IncrementarValor()
     {
         valor++;
